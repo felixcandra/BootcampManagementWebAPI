@@ -1,0 +1,16 @@
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\BusinessLogic.exe.config
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\BusinessLogic.exe
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\BusinessLogic.pdb
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\Common.exe
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\Core.exe
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\DataAccess.exe
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\EntityFramework.dll
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\Common.pdb
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\Core.pdb
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\DataAccess.pdb
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\EntityFramework.xml
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\obj\Debug\BusinessLogic.exe
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\BusinessLogic\obj\Debug\BusinessLogic.pdb

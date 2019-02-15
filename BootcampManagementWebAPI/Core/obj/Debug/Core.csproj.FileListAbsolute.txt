@@ -1,0 +1,10 @@
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.exe.config
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.exe
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.pdb
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\EntityFramework.dll
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\EntityFramework.xml
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.exe
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.pdb
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
