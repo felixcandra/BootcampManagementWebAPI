@@ -52,10 +52,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IDailyScoreRepository.cs" />
+    <Compile Include="Interface\IDistrictRepository.cs" />
+    <Compile Include="Interface\IEmployeeRepository.cs" />
+    <Compile Include="Interface\IHistoryEducationRepository.cs" />
     <Compile Include="Interface\IProvinceRepository.cs" />
     <Compile Include="Interface\IRegencyRepository.cs" />
+    <Compile Include="Interface\IReligionRepository.cs" />
+    <Compile Include="Interface\IVillageRepository.cs" />
+    <Compile Include="Interface\IWeeklyScoreRepository.cs" />
+    <Compile Include="Interface\Master\DailyScoreRepository.cs" />
+    <Compile Include="Interface\Master\DistrictRepository.cs" />
+    <Compile Include="Interface\Master\EmployeeRepository.cs" />
+    <Compile Include="Interface\Master\HistoryEducationRepository.cs" />
+    <Compile Include="Interface\IUniversityRepository.cs" />
     <Compile Include="Interface\Master\ProvinceRepository.cs" />
     <Compile Include="Interface\Master\RegencyRepository.cs" />
+    <Compile Include="Interface\Master\ReligionRepository.cs" />
+    <Compile Include="Interface\Master\UniversityRepository.cs" />
+    <Compile Include="Interface\Master\VillageRepository.cs" />
+    <Compile Include="Interface\Master\WeeklyScoreRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

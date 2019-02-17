@@ -53,11 +53,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
+    <Compile Include="Migrations\201902160158384_addVillageandDistrict.cs" />
+    <Compile Include="Migrations\201902160158384_addVillageandDistrict.Designer.cs">
+      <DependentUpon>201902160158384_addVillageandDistrict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902160346548_addUniversity.cs" />
+    <Compile Include="Migrations\201902160346548_addUniversity.Designer.cs">
+      <DependentUpon>201902160346548_addUniversity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902160524115_addEmployee.cs" />
+    <Compile Include="Migrations\201902160524115_addEmployee.Designer.cs">
+      <DependentUpon>201902160524115_addEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902170657319_addHistoryEducationWeeklyScoreDailyScore.cs" />
+    <Compile Include="Migrations\201902170657319_addHistoryEducationWeeklyScoreDailyScore.Designer.cs">
+      <DependentUpon>201902170657319_addHistoryEducationWeeklyScoreDailyScore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\DailyScore.cs" />
+    <Compile Include="Model\District.cs" />
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\HistoryEducation.cs" />
     <Compile Include="Model\Province.cs" />
     <Compile Include="Model\Regency.cs" />
+    <Compile Include="Model\Religion.cs" />
+    <Compile Include="Model\University.cs" />
+    <Compile Include="Model\Village.cs" />
+    <Compile Include="Model\WeeklyScore.cs" />
+    <Compile Include="Param\DailyScoreParam.cs" />
+    <Compile Include="Param\DistrictParam.cs" />
+    <Compile Include="Param\EmployeeParam.cs" />
+    <Compile Include="Param\HistoryEducationParam.cs" />
     <Compile Include="Param\ProvinceParam.cs" />
     <Compile Include="Param\RegencyParam.cs" />
+    <Compile Include="Param\ReligionParam.cs" />
+    <Compile Include="Param\UniversityParam.cs" />
+    <Compile Include="Param\VillageParam.cs" />
+    <Compile Include="Param\WeeklyScoreParam.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +102,20 @@
       <Project>{e7e0265d-5f20-4e3b-b296-3aa7aaa01cc2}</Project>
       <Name>Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902160158384_addVillageandDistrict.resx">
+      <DependentUpon>201902160158384_addVillageandDistrict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902160346548_addUniversity.resx">
+      <DependentUpon>201902160346548_addUniversity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902160524115_addEmployee.resx">
+      <DependentUpon>201902160524115_addEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902170657319_addHistoryEducationWeeklyScoreDailyScore.resx">
+      <DependentUpon>201902170657319_addHistoryEducationWeeklyScoreDailyScore.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

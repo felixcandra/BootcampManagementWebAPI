@@ -10,3 +10,8 @@ E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\b
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.exe
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.pdb
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.addVillageandDistrict.resources
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.addUniversity.resources
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.addEmployee.resources
+E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.addHistoryEducationWeeklyScoreDailyScore.resources

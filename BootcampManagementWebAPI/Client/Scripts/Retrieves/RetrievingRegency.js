@@ -38,9 +38,9 @@ function LoadIndexProvince() {
         url: "http://localhost:53126/api/Regency",
         async: false, // ini untuk menjalankan fungsi search dan sorting data table
         datatype: "json",
-        success: function (province) {
+        success: function (regency) {
             var html = '';
-            $.each(province, function (index, val) {
+            $.each(regency, function (index, val) {
                 html += '<tr>';
                 //html += '<td>' + i + '</td>'; ini kalau mau nampilkan nomor 1 sampai sekian
                 html += '<td>' + val.Name + '</td>';
