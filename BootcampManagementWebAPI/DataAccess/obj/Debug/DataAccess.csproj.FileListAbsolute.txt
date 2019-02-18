@@ -15,3 +15,17 @@ E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\o
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.addUniversity.resources
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.addEmployee.resources
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.addHistoryEducationWeeklyScoreDailyScore.resources
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\DataAccess.exe.config
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\DataAccess.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\DataAccess.pdb
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\Core.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\EntityFramework.dll
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\Core.pdb
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\EntityFramework.xml
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.pdb
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.gabung.resources
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache

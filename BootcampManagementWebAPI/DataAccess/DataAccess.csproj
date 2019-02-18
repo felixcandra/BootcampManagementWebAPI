@@ -53,40 +53,48 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
-    <Compile Include="Migrations\201902160158384_addVillageandDistrict.cs" />
-    <Compile Include="Migrations\201902160158384_addVillageandDistrict.Designer.cs">
-      <DependentUpon>201902160158384_addVillageandDistrict.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902160346548_addUniversity.cs" />
-    <Compile Include="Migrations\201902160346548_addUniversity.Designer.cs">
-      <DependentUpon>201902160346548_addUniversity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902160524115_addEmployee.cs" />
-    <Compile Include="Migrations\201902160524115_addEmployee.Designer.cs">
-      <DependentUpon>201902160524115_addEmployee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902170657319_addHistoryEducationWeeklyScoreDailyScore.cs" />
-    <Compile Include="Migrations\201902170657319_addHistoryEducationWeeklyScoreDailyScore.Designer.cs">
-      <DependentUpon>201902170657319_addHistoryEducationWeeklyScoreDailyScore.cs</DependentUpon>
+    <Compile Include="Migrations\201902180144562_gabung.cs" />
+    <Compile Include="Migrations\201902180144562_gabung.Designer.cs">
+      <DependentUpon>201902180144562_gabung.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Batch.cs" />
+    <Compile Include="Model\Class.cs" />
     <Compile Include="Model\DailyScore.cs" />
+    <Compile Include="Model\Department.cs" />
     <Compile Include="Model\District.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\ErrorBank.cs" />
     <Compile Include="Model\HistoryEducation.cs" />
+    <Compile Include="Model\Lesson.cs" />
     <Compile Include="Model\Province.cs" />
     <Compile Include="Model\Regency.cs" />
     <Compile Include="Model\Religion.cs" />
+    <Compile Include="Model\Room.cs" />
+    <Compile Include="Model\Schedule.cs" />
+    <Compile Include="Model\Skill.cs" />
+    <Compile Include="Model\SkillStudent.cs" />
+    <Compile Include="Model\Student.cs" />
     <Compile Include="Model\University.cs" />
     <Compile Include="Model\Village.cs" />
     <Compile Include="Model\WeeklyScore.cs" />
+    <Compile Include="Param\BatchParam.cs" />
+    <Compile Include="Param\ClassParam.cs" />
     <Compile Include="Param\DailyScoreParam.cs" />
+    <Compile Include="Param\DepartmentParam.cs" />
     <Compile Include="Param\DistrictParam.cs" />
     <Compile Include="Param\EmployeeParam.cs" />
+    <Compile Include="Param\ErrorBankParam.cs" />
     <Compile Include="Param\HistoryEducationParam.cs" />
+    <Compile Include="Param\LessonParam.cs" />
     <Compile Include="Param\ProvinceParam.cs" />
     <Compile Include="Param\RegencyParam.cs" />
     <Compile Include="Param\ReligionParam.cs" />
+    <Compile Include="Param\RoomParam.cs" />
+    <Compile Include="Param\ScheduleParam.cs" />
+    <Compile Include="Param\SkillParam.cs" />
+    <Compile Include="Param\SkillStudentParam.cs" />
+    <Compile Include="Param\StudentParam.cs" />
     <Compile Include="Param\UniversityParam.cs" />
     <Compile Include="Param\VillageParam.cs" />
     <Compile Include="Param\WeeklyScoreParam.cs" />
@@ -104,17 +112,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902160158384_addVillageandDistrict.resx">
-      <DependentUpon>201902160158384_addVillageandDistrict.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902160346548_addUniversity.resx">
-      <DependentUpon>201902160346548_addUniversity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902160524115_addEmployee.resx">
-      <DependentUpon>201902160524115_addEmployee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902170657319_addHistoryEducationWeeklyScoreDailyScore.resx">
-      <DependentUpon>201902170657319_addHistoryEducationWeeklyScoreDailyScore.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902180144562_gabung.resx">
+      <DependentUpon>201902180144562_gabung.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
