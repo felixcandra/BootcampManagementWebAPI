@@ -1,5 +1,5 @@
 ﻿var Departments = []
-//var Students = []
+var Employees = []
 $(document).ready(function () {
     hideAlert();
     LoadIndexLesson();
@@ -7,6 +7,31 @@ $(document).ready(function () {
         "ajax": LoadIndexLesson()
     })
 })
+
+function LoadEmployee(element) {
+    if (Employees.length == 0) {
+        $.ajax({
+            type: "GET", // get
+            url: 'http://localhost:53126/api/Employees',
+            success: function (data) {
+                Employees = data; //Class
+                //and render Class to element
+                renderEmployee(element);
+            }
+        })
+    } else {
+        //render Class to element if var Classes above not empty
+        renderEmployee(element);
+    }
+}
+function renderEmployee(element) {
+    var $ele = $(element);
+    $ele.empty(); //kosongkan element
+    $ele.append($('<option/>').val('0').text('Select')); //tambahkan item kedalam dropdown
+    $.each(Employees, function (i, val) { // tambahkan item baru kedalam dropdown untuk setiap nilai yang ada didalam Classs []
+        $ele.append($('<option/>').val(val.Id).text(val.First_Name)); //id sama namanyanya Provincies
+    })
+}
 
 function LoadDepartment(element) {
     if (Departments.length == 0) {
@@ -33,30 +58,6 @@ function renderDepartment(element) {
     })
 }
 
-//function LoadStudent(element) {
-//    if (Students.length == 0) {
-//        $.ajax({
-//            type: "GET", // get
-//            url: 'http://localhost:53126/api/Students',
-//            success: function (data) {
-//                Students= data; //Lesson
-//                //and render Lesson to element
-//                renderStudent(element);
-//            }
-//        })
-//    } else {
-//        //render Lesson to element if var Lessons above not empty
-//        renderStudent(element);
-//    }
-//}
-//function renderStudent(element) {
-//    var $ele = $(element);
-//    $ele.empty(); //kosongkan element
-//    $ele.append($('<option/>').val('0').text('Select')); //tambahkan item kedalam dropdown
-//    $.each(Students, function (i, val) { // tambahkan item baru kedalam dropdown untuk setiap nilai yang ada didalam Lessons []
-//        $ele.append($('<option/>').val(val.Id).text(val.Name)); //id sama namanyanya Provincies
-//    })
-//}
 
 function LoadIndexLesson() {
     $.ajax({
@@ -73,6 +74,7 @@ function LoadIndexLesson() {
                 html += '<td>' + val.Level + '</td>';
                 html += '<td>' + val.LinkFile + '</td>';
                 html += '<td>' + val.Departments.Name + '</td>';
+                html += '<td>' + val.Employees.First_Name + '</td>'
                 html += '<td>' + val.Date + '</td>';
                 html += '<td> <a href="#" onclick="return GetById('+val.Id+')"> Edit </a>';
                 html += '| <a href="#" onclick="return Delete('+val.Id+')"> Delete </a>  </td>';
@@ -92,7 +94,7 @@ function Save() {
     item.Date = $('#Date').val();
     item.LinkFile = $('#LinkFile').val();
     item.Department_Id = $('#Department').val();
-    //item.Student_Id = $('#Student').val();
+    item.Employee_Id = $('#Employee').val();
     $.ajax({
         type: "POST", //insert
         url: "http://localhost:53126/api/Lessons",
@@ -105,6 +107,7 @@ function Save() {
             $('#Level').val('');
             $('#Date').val('');
             $('#Department').val(0);
+            $('#Employee').val(0);
             $('#LinkFile').val('');
         }
     });
@@ -118,6 +121,7 @@ function Edit() {
     item.Date = $('#Date').val();
     item.LinkFile = $('#LinkFile').val();
     item.Department_Id = $('#Department').val();
+    item.Employee_Id = $('#Employee').val();
     $.ajax({
         type: "PUT", //put untuk update
         url: "http://localhost:53126/api/Lessons/" + $('#Id').val(),
@@ -130,6 +134,7 @@ function Edit() {
             $('#Level').val('');
             $('#Date').val('');
             $('#Department').val(0);
+            $('#Employee').val(0);
             $('#LinkFile').val('');
         }
     });
@@ -147,6 +152,7 @@ function GetById(Id) {
             $('#Date').val(item.Date);
             $('#LinkFile').val(item.LinkFile);
             $('#Department').val(item.Departments.Id);
+            $('#Employee').val(item.Employees.Id);
             $('#myModal').modal('show');
             $('#Update').show();
             $('#Save').hide();
@@ -191,10 +197,26 @@ function validationInsert() {
         isAllValid = false; //kalau textbox nama kosong maka
         $('#Name').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
     }
+    if ($('#Level').val() == "" || ($('#Level').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Level').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+    if ($('#Date').val() == "" || ($('#Date').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Date').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+    if ($('#LinkFile').val() == "" || ($('#LinkFile').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Linkfile').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
     //cek dropdown Department
     if ($('#Department').val() == "0" || $('#Department').val() == 0) {
         isAllValid = false;
         $('#Department').siblings('span.error').css('visibility', 'visible');
+    }
+    if ($('#Employee').val() == "0" || $('#Employee').val() == 0) {
+        isAllValid = false;
+        $('#Employee').siblings('span.error').css('visibility', 'visible');
     }
     // kalau semua field sudah terisi
     if (isAllValid) { 
@@ -211,10 +233,26 @@ function validationUpdate() {
         isAllValid = false; //kalau textbox nama kosong maka
         $('#Name').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
     }
+    if ($('#Level').val() == "" || ($('#Level').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Level').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+    if ($('#Date').val() == "" || ($('#Date').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Date').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+    if ($('#LinkFile').val() == "" || ($('#LinkFile').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Linkfile').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
     //cek dropdown Department
     if ($('#Department').val() == "0" || $('#Department').val() == 0) {
         isAllValid = false;
         $('#Department').siblings('span.error').css('visibility', 'visible');
+    }
+    if ($('#Employee').val() == "0" || $('#Employee').val() == 0) {
+        isAllValid = false;
+        $('#Employee').siblings('span.error').css('visibility', 'visible');
     }
     // kalau semua field sudah terisi
     if (isAllValid) {
@@ -227,6 +265,7 @@ function hideAlert() {
     $('#Level').siblings('span.error').css('visibility', 'hidden');
     $('#Date').siblings('span.error').css('visibility', 'hidden');
     $('#Department').siblings('span.error').css('visibility', 'hidden');
+    $('#Employee').siblings('span.error').css('visibility', 'hidden');
     $('#LinkFile').siblings('span.error').css('visibility', 'hidden');
 }
 
@@ -235,10 +274,11 @@ function nuke() {
     $('#Level').val('');
     $('#Date').val('');
     $('#Department').val(0);
+    $('#Employee').val(0);
     $('#LinkFile').val('');
     $('#Update').hide();
     $('#Save').show();
     hideAlert();
 }
 LoadDepartment($('#Department'));
-//LoadStudent($('#Student'));
+LoadEmployee($('#Employee'));

@@ -14,6 +14,6 @@ namespace DataAccess.Model
         public DateTimeOffset Date { get; set; }
         public string LinkFile { get; set; }
         public virtual Department Departments { get; set; }
-        //public virtual Employee Employees { get; set; }
+        public virtual Employee Employees { get; set; }
     }
 }

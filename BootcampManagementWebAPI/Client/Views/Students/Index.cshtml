@@ -32,12 +32,7 @@
                 <th>
                     Phone
                 </th>
-                <th>
-                    Email
-                </th>
-                <th>
-                    Status
-                </th>
+                
                 <th>
                     Hiring
                 </th>
@@ -76,6 +71,28 @@
                         <span style="color:red" class="error">Valid Last Name required</span>
                     </div>
                     <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email" />
+                        <span style="color:red" class="error">Valid Email required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Username">Username</label>
+                        <input type="text" class="form-control" id="Username" placeholder="Username" />
+                        <span style="color:red" class="error">Valid Username required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="text" class="form-control" id="Password" placeholder="Password" />
+                        <span style="color:red" class="error">Valid Password required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Class">Class</label>
+                        <select id="Class" data-placement="Choose Class" class="form-control">
+                            <option>Select</option>
+                        </select>
+                        <span style="color:red" class="error">Select Class</span>
+                    </div>
+                    <div class="form-group">
                         <label for="PlaceOfBirth">Place Of Birth</label>
                         <input type="text" class="form-control" id="PlaceOfBirth" placeholder="PlaceOfBirth" />
                         <span style="color:red" class="error">Valid Place Of Birth required</span>
@@ -94,16 +111,7 @@
                         </select>
                         <span style="color:red" class="error">Select Gender</span>
                     </div>
-                    <div class="form-group">
-                        <label for="Username">Username</label>
-                        <input type="text" class="form-control" id="Username" placeholder="Username" />
-                        <span style="color:red" class="error">Valid Username required</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="Password">Password</label>
-                        <input type="text" class="form-control" id="Password" placeholder="Password" />
-                        <span style="color:red" class="error">Valid Password required</span>
-                    </div>
+                    
                     <div class="form-group">
                         <label for="SecretQuestion">Secret Question</label>
                         <select id="SecretQuestion" data-placement="Choose Secret Question" class="form-control">
@@ -128,11 +136,7 @@
                         <input type="number" class="form-control" id="Phone" placeholder="Phone" />
                         <span style="color:red" class="error">Valid Phone required</span>
                     </div>
-                    <div class="form-group">
-                        <label for="Email">Email</label>
-                        <input type="text" class="form-control" id="Email" placeholder="Email" />
-                        <span style="color:red" class="error">Valid Email required</span>
-                    </div>
+                    
                     <div class="form-group">
                         <label for="Status">Status</label>
                         <input type="text" class="form-control" id="Status" placeholder="Status" />
@@ -144,11 +148,18 @@
                         <span style="color:red" class="error">Valid Hiring Location required</span>
                     </div>
                     <div class="form-group">
-                        <label for="Class">Class</label>                         
-                        <select id="Class" data-placement="Choose Class" class="form-control">
+                        <label for="Religion">Religion</label>                         
+                        <select id="Religion" data-placement="Choose Religion" class="form-control">
                             <option>Select</option>
                         </select>
-                        <span style="color:red" class="error">Select Class</span>
+                        <span style="color:red" class="error">Select Religion</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Village">Village</label>
+                        <select id="Village" data-placement="Choose Village" class="form-control">
+                            <option>Select</option>
+                        </select>
+                        <span style="color:red" class="error">Select Village</span>
                     </div>
 
                 </form>

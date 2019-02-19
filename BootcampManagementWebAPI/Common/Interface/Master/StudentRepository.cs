@@ -57,12 +57,12 @@ namespace Common.Interface.Master
             student.SecretQuestion = studentParam.SecretQuestion;
             student.SecretAnswer = studentParam.SecretAnswer;
             student.HiringLocation = studentParam.HiringLocation;
-            //var getReligion = myContext.Religions.Find(studentParam.Religion_Id);
-            //student.Religions = getReligion;
+            var getReligion = myContext.Religions.Find(studentParam.Religion_Id);
+            student.Religions = getReligion;
             var getClass = myContext.Classes.Find(studentParam.Class_Id);
             student.Classes = getClass;
-            //var getVillage = myContext.Villages.Find(studentParam.Village_Id);
-            //student.Villages = getVillage;
+            var getVillage = myContext.Villages.Find(studentParam.Village_Id);
+            student.Villages = getVillage;
             student.CreateDate = DateTimeOffset.Now.LocalDateTime;
             student.IsDelete = false;
             myContext.Students.Add(student);
@@ -88,12 +88,12 @@ namespace Common.Interface.Master
             student.Email = studentParam.Email;
             student.Status = studentParam.Status;
             student.HiringLocation = studentParam.HiringLocation;
-            //var getReligion = myContext.Religions.Find(studentParam.Religion_Id);
-            //student.Religions = getReligion;
+            var getReligion = myContext.Religions.Find(studentParam.Religion_Id);
+            student.Religions = getReligion;
             var getClass = myContext.Classes.Find(studentParam.Class_Id);
             student.Classes = getClass;
-            //var getVillage = myContext.Villages.Find(studentParam.Village_Id);
-            //student.Villages = getVillage;
+            var getVillage = myContext.Villages.Find(studentParam.Village_Id);
+            student.Villages = getVillage;
             student.UpdateDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
             if (result > 0)

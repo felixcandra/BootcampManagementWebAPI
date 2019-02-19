@@ -16,11 +16,11 @@ namespace DataAccess.Model
         public string PlaceOfBirth { get; set; }
         public string Gender { get; set; }
         public string Address { get; set; }
-        public Int32 Phone { get; set; }
+        public string Phone { get; set; }
         public string Email { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public string Status { get; set; }
+        public bool Status { get; set; }
         public string SecretQuestion { get; set; }
         public string SecretAnswer { get; set; }
         public string HiringLocation { get; set; }

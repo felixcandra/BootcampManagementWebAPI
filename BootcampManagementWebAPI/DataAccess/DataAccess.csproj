@@ -53,9 +53,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
-    <Compile Include="Migrations\201902180144562_gabung.cs" />
-    <Compile Include="Migrations\201902180144562_gabung.Designer.cs">
-      <DependentUpon>201902180144562_gabung.cs</DependentUpon>
+    <Compile Include="Migrations\201902180314011_up.cs" />
+    <Compile Include="Migrations\201902180314011_up.Designer.cs">
+      <DependentUpon>201902180314011_up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902180435433_addemp.cs" />
+    <Compile Include="Migrations\201902180435433_addemp.Designer.cs">
+      <DependentUpon>201902180435433_addemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902180659557_student.cs" />
+    <Compile Include="Migrations\201902180659557_student.Designer.cs">
+      <DependentUpon>201902180659557_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902180710271_upstudent.cs" />
+    <Compile Include="Migrations\201902180710271_upstudent.Designer.cs">
+      <DependentUpon>201902180710271_upstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902180753581_updatestu.cs" />
+    <Compile Include="Migrations\201902180753581_updatestu.Designer.cs">
+      <DependentUpon>201902180753581_updatestu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902180759302_addd.cs" />
+    <Compile Include="Migrations\201902180759302_addd.Designer.cs">
+      <DependentUpon>201902180759302_addd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Batch.cs" />
@@ -112,8 +132,23 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902180144562_gabung.resx">
-      <DependentUpon>201902180144562_gabung.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902180314011_up.resx">
+      <DependentUpon>201902180314011_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180435433_addemp.resx">
+      <DependentUpon>201902180435433_addemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180659557_student.resx">
+      <DependentUpon>201902180659557_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180710271_upstudent.resx">
+      <DependentUpon>201902180710271_upstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180753581_updatestu.resx">
+      <DependentUpon>201902180753581_updatestu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180759302_addd.resx">
+      <DependentUpon>201902180759302_addd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

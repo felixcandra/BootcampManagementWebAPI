@@ -26,3 +26,17 @@ E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\
 E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.pdb
 E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.xml
 E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe.config
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.pdb
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Core.exe
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.exe
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.dll
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Core.pdb
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.pdb
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.xml
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.exe
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.pdb

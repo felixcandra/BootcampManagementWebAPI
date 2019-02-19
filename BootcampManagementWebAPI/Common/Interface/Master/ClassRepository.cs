@@ -48,8 +48,8 @@ namespace Common.Interface.Master
             kelas.Departments = getDepartment;
             var getBatch = myContext.Batches.Find(classParam.Batch_Id);
             kelas.Batches = getBatch;
-            //var getEmployee = myContext.Employees.Find(classParam.Employee_Id);
-            //kelas.Employees = getEmployee;
+            var getEmployee = myContext.Employees.Find(classParam.Employee_Id);
+            kelas.Employees = getEmployee;
             kelas.CreateDate = DateTimeOffset.Now.LocalDateTime;
             kelas.IsDelete = false;
             myContext.Classes.Add(kelas);
@@ -70,8 +70,8 @@ namespace Common.Interface.Master
             kelas.Departments = getDepartment;
             var getBatch = myContext.Batches.Find(classParam.Batch_Id);
             kelas.Batches = getBatch;
-            //var getEmployee = myContext.Employees.Find(classParam.Employee_Id);
-            //kelas.Employees = getEmployee;
+            var getEmployee = myContext.Employees.Find(classParam.Employee_Id);
+            kelas.Employees = getEmployee;
             kelas.UpdateDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
             if (result > 0)

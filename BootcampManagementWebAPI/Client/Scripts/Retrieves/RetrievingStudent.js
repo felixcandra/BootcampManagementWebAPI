@@ -1,5 +1,6 @@
 ﻿var Classes = []
-//var Batches = []
+var Villages = []
+var Religions = []
 $(document).ready(function () {
     hideAlert();
     LoadIndexStudent();
@@ -7,6 +8,31 @@ $(document).ready(function () {
         "ajax": LoadIndexStudent()
     })
 })
+
+function LoadReligion(element) {
+    if (Religions.length == 0) {
+        $.ajax({
+            type: "GET", // get
+            url: 'http://localhost:53126/api/Religions',
+            success: function (data) {
+                Religions = data; //Student
+                //and render Student to element
+                renderReligion(element); 
+            }
+        })
+    } else {
+        //render Student to element if var Students above not empty
+        renderReligion(element);
+    }
+}
+function renderReligion(element) {
+    var $ele = $(element);
+    $ele.empty(); //kosongkan element
+    $ele.append($('<option/>').val('0').text('Select')); //tambahkan item kedalam dropdown
+    $.each(Religions, function (i, val) { // tambahkan item baru kedalam dropdown untuk setiap nilai yang ada didalam Students []
+        $ele.append($('<option/>').val(val.Id).text(val.Name)); //id sama namanyanya Provincies
+    })
+}
 
 function LoadClass(element) {
     if (Classes.length == 0) {
@@ -16,7 +42,7 @@ function LoadClass(element) {
             success: function (data) {
                 Classes = data; //Student
                 //and render Student to element
-                renderClass(element); 
+                renderClass(element);
             }
         })
     } else {
@@ -33,30 +59,30 @@ function renderClass(element) {
     })
 }
 
-//function LoadBatch(element) {
-//    if (Batches.length == 0) {
-//        $.ajax({
-//            type: "GET", // get
-//            url: 'http://localhost:53126/api/Batches',
-//            success: function (data) {
-//                Batches= data; //Student
-//                //and render Student to element
-//                renderBatch(element);
-//            }
-//        })
-//    } else {
-//        //render Student to element if var Students above not empty
-//        renderBatch(element);
-//    }
-//}
-//function renderBatch(element) {
-//    var $ele = $(element);
-//    $ele.empty(); //kosongkan element
-//    $ele.append($('<option/>').val('0').text('Select')); //tambahkan item kedalam dropdown
-//    $.each(Batches, function (i, val) { // tambahkan item baru kedalam dropdown untuk setiap nilai yang ada didalam Students []
-//        $ele.append($('<option/>').val(val.Id).text(val.Name)); //id sama namanyanya Provincies
-//    })                                                        kela
-//}
+function LoadVillage(element) {
+    if (Villages.length == 0) {
+        $.ajax({
+            type: "GET", // get
+            url: 'http://localhost:53126/api/Villages',
+            success: function (data) {
+                Villages= data; //Student
+                //and render Student to element
+                renderVillage(element);
+            }
+        })
+    } else {
+        //render Student to element if var Students above not empty
+        renderVillage(element);
+    }
+}
+function renderVillage(element) {
+    var $ele = $(element);
+    $ele.empty(); //kosongkan element
+    $ele.append($('<option/>').val('0').text('Select')); //tambahkan item kedalam dropdown
+    $.each(Villages, function (i, val) { // tambahkan item baru kedalam dropdown untuk setiap nilai yang ada didalam Students []
+        $ele.append($('<option/>').val(val.Id).text(val.Name)); //id sama namanyanya Provincies
+    })                                                        
+}
 
 function LoadIndexStudent() {
     $.ajax({
@@ -81,6 +107,8 @@ function LoadIndexStudent() {
                 html += '<td>' + val.Status + '</td>';
                 html += '<td>' + val.HiringLocation + '</td>';
                 html += '<td>' + val.Classes.Name + '</td>';
+                html += '<td>' + val.Religions.Name + '</td>';
+                html += '<td>' + val.Villages.Name + '</td>';
                 html += '<td> <a href="#" onclick="return GetById('+val.Id+')"> Edit </a>';
                 html += '| <a href="#" onclick="return Delete('+val.Id+')"> Delete </a>  </td>';
                 html += '</tr>';
@@ -109,6 +137,8 @@ function Save() {
     item.SecretAnswer = $('#SecretAnswer').val();
     item.HiringLocation = $('#HiringLocation').val();
     item.Class_Id = $('#Class').val();
+    item.Religion_Id = $('#Religion').val();
+    item.Village_Id = $('#Village').val();
     $.ajax({
         type: "POST", //insert
         url: "http://localhost:53126/api/Students",
@@ -132,6 +162,8 @@ function Save() {
             $('#SecretAnswer').val('0');
             $('#HiringLocation').val('');
             $('#Class').val('0');
+            $('#Religion').val('0');
+            $('#Village').val('0');
         }
     });
 }
@@ -151,6 +183,8 @@ function Edit() {
     item.Status = $('#Status').val();
     item.HiringLocation = $('#HiringLocation').val();
     item.Class_Id = $('#Class').val();
+    item.Religion_Id = $('#Religion').val();
+    item.Village_Id = $('#Village').val();
     $.ajax({
         type: "PUT", //put untuk update
         url: "http://localhost:53126/api/Students/" + $('#Id').val(),
@@ -168,6 +202,8 @@ function Edit() {
             $('#Status').val('');
             $('#HiringLocation').val('');
             $('#Class').val('0');
+            $('#Religion').val('0');
+            $('#Village').val('0');
         }
     });
 };
@@ -182,6 +218,8 @@ function GetById(Id) {
             $('#FirstName').val(item.FirstName);
             $('#LastName').val(item.LastName);
             $('#Class').val(item.Classes.Id);
+            $('#Religion').val(item.Religions.Id);
+            $('#Village').val(item.Villages.Id);
             $('#DateOfBirth').val(item.DateOfBirth);
             $('#PlaceOfBirth').val(item.PlaceOfBirth);
             $('#Gender').val(item.Gender);
@@ -266,6 +304,8 @@ function validationUpdate() {
 function hideAlert() {
     $('#FirstName').siblings('span.error').css('visibility', 'hidden');
     $('#Class').siblings('span.error').css('visibility', 'hidden');
+    $('#Religion').siblings('span.error').css('visibility', 'hidden');
+    $('#Village').siblings('span.error').css('visibility', 'hidden');
     $('#LastName').siblings('span.error').css('visibility', 'hidden');
     $('#DateOfBirth').siblings('span.error').css('visibility', 'hidden');
     $('#PlaceOfBirth').siblings('span.error').css('visibility', 'hidden');
@@ -297,7 +337,9 @@ function nuke() {
     $('#SecretAnswer').val('0');
     $('#HiringLocation').val('');
     $('#Class').val('0');
-    hideAlert();
+    $('#Religion').val('0');
+    $('#Village').val('0');
 }
 LoadClass($('#Class'));
-//LoadBatch($('#Batch'));
+LoadVillage($('#Village'));
+LoadReligion($('#Religion'));

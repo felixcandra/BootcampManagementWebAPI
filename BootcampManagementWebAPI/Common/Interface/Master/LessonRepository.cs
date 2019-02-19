@@ -49,8 +49,8 @@ namespace Common.Interface.Master
             lesson.Date = DateTimeOffset.Now.ToLocalTime();
             var getDepartment = myContext.Departments.Find(lessonParam.Department_Id);
             lesson.Departments = getDepartment;
-            //var getEmloyee = myContext.Employees.Find(lessonParam.Employee_Id);
-            //lesson.Employees = getEmloyee;
+            var getEmloyee = myContext.Employees.Find(lessonParam.Employee_Id);
+            lesson.Employees = getEmloyee;
             
             lesson.CreateDate = DateTimeOffset.Now.LocalDateTime;
             lesson.IsDelete = false;
@@ -73,8 +73,8 @@ namespace Common.Interface.Master
             lesson.Date = DateTimeOffset.Now.ToLocalTime();
             var getDepartment = myContext.Departments.Find(lessonParam.Department_Id);
             lesson.Departments = getDepartment;
-            //var getEmloyee = myContext.Employees.Find(lessonParam.Employee_Id);
-            //lesson.Employees = getEmloyee;
+            var getEmloyee = myContext.Employees.Find(lessonParam.Employee_Id);
+            lesson.Employees = getEmloyee;
             lesson.UpdateDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
             if (result > 0)

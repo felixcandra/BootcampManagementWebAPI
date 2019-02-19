@@ -12,6 +12,6 @@ namespace DataAccess.Model
         public string Name { get; set; }
         public virtual Department Departments { get; set; }
         public virtual Batch Batches { get; set; }
-        //public virtual Employee Employees { get; set; }
+        public virtual Employee Employees { get; set; }
     }
 }

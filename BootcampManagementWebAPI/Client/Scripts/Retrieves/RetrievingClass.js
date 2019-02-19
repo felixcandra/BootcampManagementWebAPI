@@ -1,5 +1,6 @@
 ﻿var Departments = []
 var Batches = []
+var Employees = []
 $(document).ready(function () {
     hideAlert();
     LoadIndexClass();
@@ -7,6 +8,31 @@ $(document).ready(function () {
         "ajax": LoadIndexClass()
     })
 })
+
+function LoadEmployee(element) {
+    if (Employees.length == 0) {
+        $.ajax({
+            type: "GET", // get
+            url: 'http://localhost:53126/api/Employees',
+            success: function (data) {
+                Employees = data; //Class
+                //and render Class to element
+                renderEmployee(element); 
+            }
+        })
+    } else {
+        //render Class to element if var Classes above not empty
+        renderEmployee(element);
+    }
+}
+function renderEmployee(element) {
+    var $ele = $(element);
+    $ele.empty(); //kosongkan element
+    $ele.append($('<option/>').val('0').text('Select')); //tambahkan item kedalam dropdown
+    $.each(Employees, function (i, val) { // tambahkan item baru kedalam dropdown untuk setiap nilai yang ada didalam Classs []
+        $ele.append($('<option/>').val(val.Id).text(val.First_Name)); //id sama namanyanya Provincies
+    })
+}
 
 function LoadDepartment(element) {
     if (Departments.length == 0) {
@@ -16,7 +42,7 @@ function LoadDepartment(element) {
             success: function (data) {
                 Departments = data; //Class
                 //and render Class to element
-                renderDepartment(element); 
+                renderDepartment(element);
             }
         })
     } else {
@@ -72,6 +98,7 @@ function LoadIndexClass() {
                 html += '<td>' + val.Name + '</td>';
                 html += '<td>' + val.Departments.Name + '</td>';
                 html += '<td>' + val.Batches.Name + '</td>';//ini untuk tampilkan foreign key
+                html += '<td>' + val.Employees.First_Name + '</td>'
                 html += '<td> <a href="#" onclick="return GetById('+val.Id+')"> Edit </a>';
                 html += '| <a href="#" onclick="return Delete('+val.Id+')"> Delete </a>  </td>';
                 html += '</tr>';
@@ -88,6 +115,7 @@ function Save() {
     item.Name = $('#Name').val(); // simpan nilai yang ada di #Name di view kedalam object 
     item.Department_Id = $('#Department').val();// masih ragu disini
     item.Batch_Id = $('#Batch').val();
+    item.Employee_Id = $('#Employee').val();
     $.ajax({
         type: "POST", //insert
         url: "http://localhost:53126/api/Classes",
@@ -99,6 +127,7 @@ function Save() {
             $('#Name').val('');
             $('#Department').val(0);
             $('#Batch').val(0);
+            $('#Employee').val(0);
         }
     });
 }
@@ -110,6 +139,7 @@ function Edit() {
     item.Name = $('#Name').val();// data yang akan diedit
     item.Department_id = $('#Department').val();// masih ragu disini
     item.Batch_Id = $('#Batch').val();
+    item.Employee_Id = $('#Employee').val();
     $.ajax({
         type: "PUT", //put untuk update
         url: "http://localhost:53126/api/Classes/" + $('#Id').val(),
@@ -121,6 +151,8 @@ function Edit() {
             $('#Name').val('');
             $('#Department').val(0);
             $('#Batch').val(0);
+            $('#Employee').val(0);
+
         }
     });
 };
@@ -135,6 +167,7 @@ function GetById(Id) {
             $('#Name').val(item.Name);
             $('#Department').val(item.Departments.Id);//udah benar
             $('#Batch').val(item.Batches.Id);
+            $('#Employee').val(item.Employees.Id);
             $('#myModal').modal('show');
             $('#Update').show();
             $('#Save').hide();
@@ -185,7 +218,16 @@ function validationInsert() {
         $('#Department').siblings('span.error').css('visibility', 'visible');
     }
     // kalau semua field sudah terisi
-    if (isAllValid) { 
+    if ($('#Batch').val() == "0" || $('#Batch').val() == 0) {
+        isAllValid = false;
+        $('#Batch').siblings('span.error').css('visibility', 'visible');
+    }
+    if ($('#Employee').val() == "0" || $('#Employee').val() == 0) {
+        isAllValid = false;
+        $('#Employee').siblings('span.error').css('visibility', 'visible');
+    }
+    // kalau semua field sudah terisi
+    if (isAllValid) {
         Save();
     }
 }
@@ -205,6 +247,15 @@ function validationUpdate() {
         $('#Department').siblings('span.error').css('visibility', 'visible');
     }
     // kalau semua field sudah terisi
+    if ($('#Batch').val() == "0" || $('#Batch').val() == 0) {
+        isAllValid = false;
+        $('#Batch').siblings('span.error').css('visibility', 'visible');
+    }
+    if ($('#Employee').val() == "0" || $('#Employee').val() == 0) {
+        isAllValid = false;
+        $('#Employee').siblings('span.error').css('visibility', 'visible');
+    }
+    // kalau semua field sudah terisi
     if (isAllValid) {
         Edit();
     }
@@ -214,13 +265,17 @@ function hideAlert() {
     $('#Name').siblings('span.error').css('visibility', 'hidden');
     $('#Department').siblings('span.error').css('visibility', 'hidden');
     $('#Batch').siblings('span.error').css('visibility', 'hidden');
+    $('#Employee').siblings('span.error').css('visibility', 'hidden');
+
 }
 
 function nuke() {
     $('#Name').val('');
     $('#Department').val(0);
     $('#Batch').val(0);
+    $('#Employee').val(0);
     hideAlert();
 }
 LoadDepartment($('#Department'));
 LoadBatch($('#Batch'));
+LoadEmployee($('#Employee'));
