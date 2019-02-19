@@ -12,3 +12,17 @@ E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\D
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.xml
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.exe
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.pdb
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe.config
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.pdb
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Core.exe
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.exe
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.dll
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.dll
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Core.pdb
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.pdb
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.xml
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.xml
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.exe
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.pdb

@@ -10,3 +10,17 @@ E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\b
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.exe
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.pdb
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\DataAccess.exe.config
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\DataAccess.exe
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\DataAccess.pdb
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\Core.exe
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\EntityFramework.dll
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\Core.pdb
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\EntityFramework.xml
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.exe
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.pdb
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.Migrations.AddingAllModels.resources
+D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache

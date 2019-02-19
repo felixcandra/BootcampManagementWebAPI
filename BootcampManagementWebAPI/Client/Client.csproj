@@ -52,12 +52,24 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -120,9 +132,37 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccessesController.cs" />
+    <Compile Include="Controllers\AchievementsController.cs" />
+    <Compile Include="Controllers\BatchesController.cs" />
+    <Compile Include="Controllers\ClassesController.cs" />
+    <Compile Include="Controllers\DailyScoresController.cs" />
+    <Compile Include="Controllers\DepartmentsController.cs" />
+    <Compile Include="Controllers\DistrictsController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\ErrorBanksController.cs" />
+    <Compile Include="Controllers\HistoryEducationsController.cs" />
+    <Compile Include="Controllers\HistoryPlacementsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LessonsController.cs" />
+    <Compile Include="Controllers\LockersController.cs" />
+    <Compile Include="Controllers\OrganizationsController.cs" />
+    <Compile Include="Controllers\PlacementsController.cs" />
     <Compile Include="Controllers\ProvinciesController.cs" />
     <Compile Include="Controllers\RegenciesController.cs" />
+    <Compile Include="Controllers\ReligionsController.cs" />
+    <Compile Include="Controllers\RoomsController.cs" />
+    <Compile Include="Controllers\SchedulesController.cs" />
+    <Compile Include="Controllers\SkillsController.cs" />
+    <Compile Include="Controllers\SkillStudentsController.cs" />
+    <Compile Include="Controllers\StudentAccessesController.cs" />
+    <Compile Include="Controllers\StudentLockersController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\UniversitiesController.cs" />
+    <Compile Include="Controllers\VillagesController.cs" />
+    <Compile Include="Controllers\WeeklyScoresController.cs" />
+    <Compile Include="Controllers\WorkExperiencesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -161,8 +201,17 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Retrieves\RetrievingAccess.js" />
+    <Content Include="Scripts\Retrieves\RetrievingAchievement.js" />
+    <Content Include="Scripts\Retrieves\RetrievingHistoryPlacement.js" />
+    <Content Include="Scripts\Retrieves\RetrievingLocker.js" />
+    <Content Include="Scripts\Retrieves\RetrievingOrganization.js" />
+    <Content Include="Scripts\Retrieves\RetrievingPlacement.js" />
     <Content Include="Scripts\Retrieves\RetrievingProvince.js" />
     <Content Include="Scripts\Retrieves\RetrievingRegency.js" />
+    <Content Include="Scripts\Retrieves\RetrievingStudentAccess.js" />
+    <Content Include="Scripts\Retrieves\RetrievingStudentLocker.js" />
+    <Content Include="Scripts\Retrieves\RetrievingWorkExperience.js" />
     <Content Include="Scripts\SweetAlert\sweetalert-dev.js" />
     <Content Include="Scripts\SweetAlert\sweetalert.css" />
     <Content Include="Scripts\SweetAlert\sweetalert.min.js" />
@@ -183,11 +232,39 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Provincies\Index.cshtml" />
     <Content Include="Views\Regencies\Index.cshtml" />
+    <Content Include="Views\Organizations\Index.cshtml" />
+    <Content Include="Views\Placements\Index.cshtml" />
+    <Content Include="Views\Accesses\Index.cshtml" />
+    <Content Include="Views\Lockers\Index.cshtml" />
+    <Content Include="Views\StudentAccesses\Index.cshtml" />
+    <Content Include="Views\StudentLockers\Index.cshtml" />
+    <Content Include="Views\Achievements\Index.cshtml" />
+    <Content Include="Views\WorkExperiences\Index.cshtml" />
+    <Content Include="Views\Historyplacements\Index.cshtml" />
+    <Content Include="Views\Batches\Index.cshtml" />
+    <Content Include="Views\Classes\Index.cshtml" />
+    <Content Include="Views\DailyScores\Index.cshtml" />
+    <Content Include="Views\Departments\Index.cshtml" />
+    <Content Include="Views\Districts\Index.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\ErrorBanks\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\DataTable\media\" />
+    <Folder Include="Views\Districts\Departments\" />
+    <Folder Include="Views\HistoryEducations\" />
+    <Folder Include="Views\Lessons\" />
+    <Folder Include="Views\Religions\" />
+    <Folder Include="Views\Rooms\" />
+    <Folder Include="Views\Schedules\" />
+    <Folder Include="Views\SkillStudents\" />
+    <Folder Include="Views\Skills\" />
+    <Folder Include="Views\Students\" />
+    <Folder Include="Views\Universities\" />
+    <Folder Include="Views\Villages\" />
+    <Folder Include="Views\WeeklyScores\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
