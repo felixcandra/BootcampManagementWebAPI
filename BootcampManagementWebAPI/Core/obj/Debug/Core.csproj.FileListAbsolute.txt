@@ -8,6 +8,7 @@ E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Deb
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.exe
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.pdb
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.exe.config
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.exe
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.pdb
@@ -18,3 +19,15 @@ D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAP
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.exe
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.pdb
+=======
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.exe.config
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\Core.pdb
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\EntityFramework.dll
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\EntityFramework.xml
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Core\obj\Debug\Core.pdb
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43

@@ -212,8 +212,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\AccessesController.cs" />
     <Compile Include="Controllers\AchievementsController.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Controllers\BatchesController.cs" />
     <Compile Include="Controllers\ClassesController.cs" />
     <Compile Include="Controllers\DailyScoresController.cs" />
@@ -222,11 +225,16 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\ErrorBanksController.cs" />
     <Compile Include="Controllers\HistoryEducationsController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\HistoryPlacementsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LessonsController.cs" />
     <Compile Include="Controllers\LockersController.cs" />
     <Compile Include="Controllers\PlacementsController.cs" />
+=======
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LessonsController.cs" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Controllers\ProvinceController.cs" />
     <Compile Include="Controllers\RegencyController.cs" />
     <Compile Include="Controllers\ReligionsController.cs" />
@@ -234,14 +242,20 @@
     <Compile Include="Controllers\SchedulesController.cs" />
     <Compile Include="Controllers\SkillsController.cs" />
     <Compile Include="Controllers\SkillStudentsController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\StudentAccessesController.cs" />
     <Compile Include="Controllers\StudentLockersController.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\UniversitiesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VillagesController.cs" />
     <Compile Include="Controllers\WeeklyScoresController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\WorkExperiencesController.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

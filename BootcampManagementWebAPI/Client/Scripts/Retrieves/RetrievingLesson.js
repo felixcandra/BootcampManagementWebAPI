@@ -1,5 +1,9 @@
 ﻿var Departments = []
+<<<<<<< HEAD
 //var Students = []
+=======
+var Employees = []
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
 $(document).ready(function () {
     hideAlert();
     LoadIndexLesson();
@@ -8,6 +12,34 @@ $(document).ready(function () {
     })
 })
 
+<<<<<<< HEAD
+=======
+function LoadEmployee(element) {
+    if (Employees.length == 0) {
+        $.ajax({
+            type: "GET", // get
+            url: 'http://localhost:53126/api/Employees',
+            success: function (data) {
+                Employees = data; //Class
+                //and render Class to element
+                renderEmployee(element);
+            }
+        })
+    } else {
+        //render Class to element if var Classes above not empty
+        renderEmployee(element);
+    }
+}
+function renderEmployee(element) {
+    var $ele = $(element);
+    $ele.empty(); //kosongkan element
+    $ele.append($('<option/>').val('0').text('Select')); //tambahkan item kedalam dropdown
+    $.each(Employees, function (i, val) { // tambahkan item baru kedalam dropdown untuk setiap nilai yang ada didalam Classs []
+        $ele.append($('<option/>').val(val.Id).text(val.First_Name)); //id sama namanyanya Provincies
+    })
+}
+
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
 function LoadDepartment(element) {
     if (Departments.length == 0) {
         $.ajax({
@@ -33,6 +65,7 @@ function renderDepartment(element) {
     })
 }
 
+<<<<<<< HEAD
 //function LoadStudent(element) {
 //    if (Students.length == 0) {
 //        $.ajax({
@@ -57,6 +90,8 @@ function renderDepartment(element) {
 //        $ele.append($('<option/>').val(val.Id).text(val.Name)); //id sama namanyanya Provincies
 //    })
 //}
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
 
 function LoadIndexLesson() {
     $.ajax({
@@ -73,6 +108,10 @@ function LoadIndexLesson() {
                 html += '<td>' + val.Level + '</td>';
                 html += '<td>' + val.LinkFile + '</td>';
                 html += '<td>' + val.Departments.Name + '</td>';
+<<<<<<< HEAD
+=======
+                html += '<td>' + val.Employees.First_Name + '</td>'
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
                 html += '<td>' + val.Date + '</td>';
                 html += '<td> <a href="#" onclick="return GetById('+val.Id+')"> Edit </a>';
                 html += '| <a href="#" onclick="return Delete('+val.Id+')"> Delete </a>  </td>';
@@ -92,7 +131,11 @@ function Save() {
     item.Date = $('#Date').val();
     item.LinkFile = $('#LinkFile').val();
     item.Department_Id = $('#Department').val();
+<<<<<<< HEAD
     //item.Student_Id = $('#Student').val();
+=======
+    item.Employee_Id = $('#Employee').val();
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     $.ajax({
         type: "POST", //insert
         url: "http://localhost:53126/api/Lessons",
@@ -105,6 +148,10 @@ function Save() {
             $('#Level').val('');
             $('#Date').val('');
             $('#Department').val(0);
+<<<<<<< HEAD
+=======
+            $('#Employee').val(0);
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             $('#LinkFile').val('');
         }
     });
@@ -118,6 +165,10 @@ function Edit() {
     item.Date = $('#Date').val();
     item.LinkFile = $('#LinkFile').val();
     item.Department_Id = $('#Department').val();
+<<<<<<< HEAD
+=======
+    item.Employee_Id = $('#Employee').val();
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     $.ajax({
         type: "PUT", //put untuk update
         url: "http://localhost:53126/api/Lessons/" + $('#Id').val(),
@@ -130,6 +181,10 @@ function Edit() {
             $('#Level').val('');
             $('#Date').val('');
             $('#Department').val(0);
+<<<<<<< HEAD
+=======
+            $('#Employee').val(0);
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             $('#LinkFile').val('');
         }
     });
@@ -147,6 +202,10 @@ function GetById(Id) {
             $('#Date').val(item.Date);
             $('#LinkFile').val(item.LinkFile);
             $('#Department').val(item.Departments.Id);
+<<<<<<< HEAD
+=======
+            $('#Employee').val(item.Employees.Id);
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             $('#myModal').modal('show');
             $('#Update').show();
             $('#Save').hide();
@@ -191,11 +250,33 @@ function validationInsert() {
         isAllValid = false; //kalau textbox nama kosong maka
         $('#Name').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
     }
+<<<<<<< HEAD
+=======
+    if ($('#Level').val() == "" || ($('#Level').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Level').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+    if ($('#Date').val() == "" || ($('#Date').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Date').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+    if ($('#LinkFile').val() == "" || ($('#LinkFile').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Linkfile').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     //cek dropdown Department
     if ($('#Department').val() == "0" || $('#Department').val() == 0) {
         isAllValid = false;
         $('#Department').siblings('span.error').css('visibility', 'visible');
     }
+<<<<<<< HEAD
+=======
+    if ($('#Employee').val() == "0" || $('#Employee').val() == 0) {
+        isAllValid = false;
+        $('#Employee').siblings('span.error').css('visibility', 'visible');
+    }
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     // kalau semua field sudah terisi
     if (isAllValid) { 
         Save();
@@ -211,11 +292,33 @@ function validationUpdate() {
         isAllValid = false; //kalau textbox nama kosong maka
         $('#Name').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
     }
+<<<<<<< HEAD
+=======
+    if ($('#Level').val() == "" || ($('#Level').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Level').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+    if ($('#Date').val() == "" || ($('#Date').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Date').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+    if ($('#LinkFile').val() == "" || ($('#LinkFile').val() == " ")) {
+        isAllValid = false; //kalau textbox nama kosong maka
+        $('#Linkfile').siblings('span.error').css('visibility', 'visible'); //ini notifikasi buat ngasi tau field belum diisi pas mencet save 
+    }
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     //cek dropdown Department
     if ($('#Department').val() == "0" || $('#Department').val() == 0) {
         isAllValid = false;
         $('#Department').siblings('span.error').css('visibility', 'visible');
     }
+<<<<<<< HEAD
+=======
+    if ($('#Employee').val() == "0" || $('#Employee').val() == 0) {
+        isAllValid = false;
+        $('#Employee').siblings('span.error').css('visibility', 'visible');
+    }
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     // kalau semua field sudah terisi
     if (isAllValid) {
         Edit();
@@ -227,6 +330,10 @@ function hideAlert() {
     $('#Level').siblings('span.error').css('visibility', 'hidden');
     $('#Date').siblings('span.error').css('visibility', 'hidden');
     $('#Department').siblings('span.error').css('visibility', 'hidden');
+<<<<<<< HEAD
+=======
+    $('#Employee').siblings('span.error').css('visibility', 'hidden');
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     $('#LinkFile').siblings('span.error').css('visibility', 'hidden');
 }
 
@@ -235,10 +342,18 @@ function nuke() {
     $('#Level').val('');
     $('#Date').val('');
     $('#Department').val(0);
+<<<<<<< HEAD
+=======
+    $('#Employee').val(0);
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     $('#LinkFile').val('');
     $('#Update').hide();
     $('#Save').show();
     hideAlert();
 }
 LoadDepartment($('#Department'));
+<<<<<<< HEAD
 //LoadStudent($('#Student'));
+=======
+LoadEmployee($('#Employee'));
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43

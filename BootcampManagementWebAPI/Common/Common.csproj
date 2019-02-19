@@ -61,6 +61,7 @@
     <Compile Include="Interface\IErrorBankRepository.cs" />
     <Compile Include="Interface\IHistoryEducationRepository.cs" />
     <Compile Include="Interface\ILessonRepository.cs" />
+<<<<<<< HEAD
     <Compile Include="Interface\IReligionRepository.cs" />
     <Compile Include="Interface\IRoomRepository.cs" />
     <Compile Include="Interface\IScheduleRepository.cs" />
@@ -83,6 +84,18 @@
     <Compile Include="Interface\IStudentLockerRepository.cs" />
     <Compile Include="Interface\IWorkExperienceRepository.cs" />
     <Compile Include="Interface\Master\AchievementRepository.cs" />
+=======
+    <Compile Include="Interface\IProvinceRepository.cs" />
+    <Compile Include="Interface\IRegencyRepository.cs" />
+    <Compile Include="Interface\IReligionRepository.cs" />
+    <Compile Include="Interface\IRoomRepository.cs" />
+    <Compile Include="Interface\IScheduleRepository.cs" />
+    <Compile Include="Interface\ISkillRepository .cs" />
+    <Compile Include="Interface\ISkillStudentRepository.cs" />
+    <Compile Include="Interface\IStudentRepository.cs" />
+    <Compile Include="Interface\IVillageRepository.cs" />
+    <Compile Include="Interface\IWeeklyScoreRepository.cs" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Interface\Master\BatchRepository.cs" />
     <Compile Include="Interface\Master\ClassRepository.cs" />
     <Compile Include="Interface\Master\DailyScoreRepository.cs" />
@@ -91,11 +104,16 @@
     <Compile Include="Interface\Master\EmployeeRepository.cs" />
     <Compile Include="Interface\Master\ErrorBankRepository.cs" />
     <Compile Include="Interface\Master\HistoryEducationRepository.cs" />
+<<<<<<< HEAD
     <Compile Include="Interface\Master\HistoryPlacementRepository.cs" />
     <Compile Include="Interface\Master\LessonRepository.cs" />
     <Compile Include="Interface\Master\LockerRepository.cs" />
     <Compile Include="Interface\Master\OrganizationRepository.cs" />
     <Compile Include="Interface\Master\PlacementRepository.cs" />
+=======
+    <Compile Include="Interface\IUniversityRepository.cs" />
+    <Compile Include="Interface\Master\LessonRepository.cs" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Interface\Master\ProvinceRepository.cs" />
     <Compile Include="Interface\Master\RegencyRepository.cs" />
     <Compile Include="Interface\Master\ReligionRepository.cs" />
@@ -103,13 +121,19 @@
     <Compile Include="Interface\Master\ScheduleRepository.cs" />
     <Compile Include="Interface\Master\SkillRepository.cs" />
     <Compile Include="Interface\Master\SkillStudentRepository.cs" />
+<<<<<<< HEAD
     <Compile Include="Interface\Master\StudentAccessRepository.cs" />
     <Compile Include="Interface\Master\StudentLockerRepository.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Interface\Master\StudentRepository.cs" />
     <Compile Include="Interface\Master\UniversityRepository.cs" />
     <Compile Include="Interface\Master\VillageRepository.cs" />
     <Compile Include="Interface\Master\WeeklyScoreRepository.cs" />
+<<<<<<< HEAD
     <Compile Include="Interface\Master\WorkExperienceRepository.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

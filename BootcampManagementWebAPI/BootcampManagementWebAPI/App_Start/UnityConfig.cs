@@ -48,6 +48,7 @@ namespace BootcampManagementWebAPI
             container.RegisterType<ISkillStudentService, SkillStudentService>();
             container.RegisterType<IStudentService, StudentService>();
 
+<<<<<<< HEAD
 
 
             //this is repository area
@@ -61,6 +62,11 @@ namespace BootcampManagementWebAPI
             container.RegisterType<IAchievementRepository, AchievementRepository>();
             container.RegisterType<IHistoryPlacementRepository, HistoryPlacementRepository>();
             container.RegisterType<IWorkExperienceRepository, WorkExperienceRepository>();
+=======
+
+            //this is repository area
+
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             container.RegisterType<IBatchRepository, BatchRepository>();
             container.RegisterType<IClassRepository, ClassRepository>();
             container.RegisterType<IDepartmentRepository, DepartmentRepository>();
@@ -81,8 +87,11 @@ namespace BootcampManagementWebAPI
             container.RegisterType<IHistoryEducationRepository, HistoryEducationRepository>();
             container.RegisterType<IDailyScoreRepository, DailyScoreRepository>();
             container.RegisterType<IWeeklyScoreRepository, WeeklyScoreRepository>();
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

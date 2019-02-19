@@ -13,6 +13,7 @@ namespace DataAccess.Context
         public MyContext() : base("MyContext") { }
         public DbSet<Province> Provinces { get; set; }
         public DbSet<Regency> Regencies { get; set; }
+<<<<<<< HEAD
         public DbSet<WorkExperience> WorkExperiences { get; set; }
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<Achievement> Achievements { get; set; }
@@ -23,6 +24,8 @@ namespace DataAccess.Context
         public DbSet<HistoryPlacement> HistoryPlacements { get; set; }
         public DbSet<Placement> Placements { get; set; }
         
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
         public DbSet<Religion> Religions { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<Village> Villages { get; set; }
@@ -41,6 +44,10 @@ namespace DataAccess.Context
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SkillStudent> SkillStudents { get; set; }
         public DbSet<Student> Students { get; set; }
+<<<<<<< HEAD
+=======
+        
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
 
     }
 }

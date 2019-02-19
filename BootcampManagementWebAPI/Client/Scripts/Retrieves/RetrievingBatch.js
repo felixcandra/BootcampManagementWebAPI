@@ -103,8 +103,13 @@ function GetById(Id) {
         success: function (result) {
             $('#Id').val(result.Id);
             $('#Name').val(result.Name);
+<<<<<<< HEAD
             $('#DateStart').val();
             $('#DateEnd').val();
+=======
+            $('#DateStart').val(result.DateStart);
+            $('#DateEnd').val(result.DateEnd);
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             $('#myModal').modal('show');
             $('#Update').show();
             $('#Save').hide();

@@ -54,8 +54,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Service\IAccessService.cs" />
     <Compile Include="Service\IAchievementService.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Service\IBatchService .cs" />
     <Compile Include="Service\IClassService.cs" />
     <Compile Include="Service\IDailyScoreService.cs" />
@@ -64,11 +67,15 @@
     <Compile Include="Service\IEmployeeService.cs" />
     <Compile Include="Service\IErrorBankService.cs" />
     <Compile Include="Service\IHistoryEducationService.cs" />
+<<<<<<< HEAD
     <Compile Include="Service\IHistoryPlacementService.cs" />
     <Compile Include="Service\ILessonService.cs" />
     <Compile Include="Service\ILockerService.cs" />
     <Compile Include="Service\IOrganizationService.cs" />
     <Compile Include="Service\IPlacementService.cs" />
+=======
+    <Compile Include="Service\ILessonService.cs" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Service\IProvinceService.cs" />
     <Compile Include="Service\IRegencyService.cs" />
     <Compile Include="Service\IReligionService.cs" />
@@ -76,15 +83,21 @@
     <Compile Include="Service\IScheduleService.cs" />
     <Compile Include="Service\ISkillService.cs" />
     <Compile Include="Service\ISkillStudentService.cs" />
+<<<<<<< HEAD
     <Compile Include="Service\IStudentAccessService.cs" />
     <Compile Include="Service\IStudentLockerService.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Service\IStudentService.cs" />
     <Compile Include="Service\IUniversityService.cs" />
     <Compile Include="Service\IVillageService.cs" />
     <Compile Include="Service\IWeeklyScoreService.cs" />
+<<<<<<< HEAD
     <Compile Include="Service\IWorkExperienceService.cs" />
     <Compile Include="Service\Master\AccessService.cs" />
     <Compile Include="Service\Master\AchievementService.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Service\Master\BatchService.cs" />
     <Compile Include="Service\Master\ClassService .cs" />
     <Compile Include="Service\Master\DailyScoreService.cs" />
@@ -93,11 +106,15 @@
     <Compile Include="Service\Master\EmployeeService.cs" />
     <Compile Include="Service\Master\ErrorBankService.cs" />
     <Compile Include="Service\Master\HistoryEducationService.cs" />
+<<<<<<< HEAD
     <Compile Include="Service\Master\HistoryPlacementService.cs" />
     <Compile Include="Service\Master\LessonService.cs" />
     <Compile Include="Service\Master\LockerService.cs" />
     <Compile Include="Service\Master\OrganizationService.cs" />
     <Compile Include="Service\Master\PlacementService.cs" />
+=======
+    <Compile Include="Service\Master\LessonService.cs" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Service\Master\ProvinceService.cs" />
     <Compile Include="Service\Master\RegencyService.cs" />
     <Compile Include="Service\Master\ReligionService.cs" />
@@ -105,13 +122,19 @@
     <Compile Include="Service\Master\ScheduleService.cs" />
     <Compile Include="Service\Master\SkillService.cs" />
     <Compile Include="Service\Master\SkillStudentService.cs" />
+<<<<<<< HEAD
     <Compile Include="Service\Master\StudentAccessService.cs" />
     <Compile Include="Service\Master\StudentLockerService.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Service\Master\StudentService.cs" />
     <Compile Include="Service\Master\UniversityService.cs" />
     <Compile Include="Service\Master\VillageService.cs" />
     <Compile Include="Service\Master\WeeklyScoreService.cs" />
+<<<<<<< HEAD
     <Compile Include="Service\Master\WorkExperienceService.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

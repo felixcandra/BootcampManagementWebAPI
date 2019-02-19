@@ -12,6 +12,10 @@ namespace DataAccess.Model
         public string Name { get; set; }
         public virtual Department Departments { get; set; }
         public virtual Batch Batches { get; set; }
+<<<<<<< HEAD
         //public virtual Employee Employees { get; set; }
+=======
+        public virtual Employee Employees { get; set; }
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     }
 }

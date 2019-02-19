@@ -12,6 +12,7 @@ E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\D
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.xml
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.exe
 E:\Kerja\Bootcamp\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.pdb
+<<<<<<< HEAD
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe.config
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.pdb
@@ -26,3 +27,33 @@ D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAP
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.exe
 D:\API\BootcampManagementWebAPI\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.pdb
+=======
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.pdb
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe.config
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.pdb
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Core.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.exe
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.dll
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Core.pdb
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.pdb
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.xml
+E:\Git\Felix\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe.config
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.exe
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Common.pdb
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Core.exe
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.exe
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.dll
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\Core.pdb
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\DataAccess.pdb
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.xml
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.exe
+E:\Git\Felix\Lagi\BootcampManagementWebAPI\BootcampManagementWebAPI\Common\obj\Debug\Common.pdb
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43

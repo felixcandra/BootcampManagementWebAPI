@@ -49,8 +49,13 @@ namespace Common.Interface.Master
             lesson.Date = DateTimeOffset.Now.ToLocalTime();
             var getDepartment = myContext.Departments.Find(lessonParam.Department_Id);
             lesson.Departments = getDepartment;
+<<<<<<< HEAD
             //var getEmloyee = myContext.Employees.Find(lessonParam.Employee_Id);
             //lesson.Employees = getEmloyee;
+=======
+            var getEmloyee = myContext.Employees.Find(lessonParam.Employee_Id);
+            lesson.Employees = getEmloyee;
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             
             lesson.CreateDate = DateTimeOffset.Now.LocalDateTime;
             lesson.IsDelete = false;
@@ -73,8 +78,13 @@ namespace Common.Interface.Master
             lesson.Date = DateTimeOffset.Now.ToLocalTime();
             var getDepartment = myContext.Departments.Find(lessonParam.Department_Id);
             lesson.Departments = getDepartment;
+<<<<<<< HEAD
             //var getEmloyee = myContext.Employees.Find(lessonParam.Employee_Id);
             //lesson.Employees = getEmloyee;
+=======
+            var getEmloyee = myContext.Employees.Find(lessonParam.Employee_Id);
+            lesson.Employees = getEmloyee;
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             lesson.UpdateDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
             if (result > 0)

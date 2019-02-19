@@ -132,9 +132,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+<<<<<<< HEAD
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccessesController.cs" />
     <Compile Include="Controllers\AchievementsController.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Controllers\BatchesController.cs" />
     <Compile Include="Controllers\ClassesController.cs" />
     <Compile Include="Controllers\DailyScoresController.cs" />
@@ -143,12 +146,17 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\ErrorBanksController.cs" />
     <Compile Include="Controllers\HistoryEducationsController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\HistoryPlacementsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LessonsController.cs" />
     <Compile Include="Controllers\LockersController.cs" />
     <Compile Include="Controllers\OrganizationsController.cs" />
     <Compile Include="Controllers\PlacementsController.cs" />
+=======
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LessonsController.cs" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Controllers\ProvinciesController.cs" />
     <Compile Include="Controllers\RegenciesController.cs" />
     <Compile Include="Controllers\ReligionsController.cs" />
@@ -156,13 +164,19 @@
     <Compile Include="Controllers\SchedulesController.cs" />
     <Compile Include="Controllers\SkillsController.cs" />
     <Compile Include="Controllers\SkillStudentsController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\StudentAccessesController.cs" />
     <Compile Include="Controllers\StudentLockersController.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\UniversitiesController.cs" />
     <Compile Include="Controllers\VillagesController.cs" />
     <Compile Include="Controllers\WeeklyScoresController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\WorkExperiencesController.cs" />
+=======
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -177,6 +191,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Bootstrap\bootstrap.min.css" />
+    <Content Include="Scripts\Bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\DataTable\.bower.json" />
     <Content Include="Scripts\DataTable\bower.json" />
     <Content Include="Scripts\DataTable\Contributing.md" />
@@ -191,6 +207,8 @@
     <Content Include="Scripts\DataTable\sort_both.png" />
     <Content Include="Scripts\DataTable\sort_desc.png" />
     <Content Include="Scripts\DataTable\sort_desc_disabled.png" />
+    <Content Include="Scripts\DatePicker\bootstrap-datepicker.min.css" />
+    <Content Include="Scripts\DatePicker\bootstrap-datepicker.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -198,9 +216,11 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Jquery\jquery.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+<<<<<<< HEAD
     <Content Include="Scripts\Retrieves\RetrievingAccess.js" />
     <Content Include="Scripts\Retrieves\RetrievingAchievement.js" />
     <Content Include="Scripts\Retrieves\RetrievingHistoryPlacement.js" />
@@ -212,6 +232,28 @@
     <Content Include="Scripts\Retrieves\RetrievingStudentAccess.js" />
     <Content Include="Scripts\Retrieves\RetrievingStudentLocker.js" />
     <Content Include="Scripts\Retrieves\RetrievingWorkExperience.js" />
+=======
+    <Content Include="Scripts\Retrieves\RetrievingBatch.js" />
+    <Content Include="Scripts\Retrieves\RetrievingClass.js" />
+    <Content Include="Scripts\Retrieves\RetrievingDailyScore.js" />
+    <Content Include="Scripts\Retrieves\RetrievingDepartment.js" />
+    <Content Include="Scripts\Retrieves\RetrievingDistrict.js" />
+    <Content Include="Scripts\Retrieves\RetrievingEmployee.js" />
+    <Content Include="Scripts\Retrieves\RetrievingErrorBank.js" />
+    <Content Include="Scripts\Retrieves\RetrievingHistoryEducation.js" />
+    <Content Include="Scripts\Retrieves\RetrievingLesson.js" />
+    <Content Include="Scripts\Retrieves\RetrievingProvince.js" />
+    <Content Include="Scripts\Retrieves\RetrievingRegency.js" />
+    <Content Include="Scripts\Retrieves\RetrievingReligion.js" />
+    <Content Include="Scripts\Retrieves\RetrievingRoom.js" />
+    <Content Include="Scripts\Retrieves\RetrievingSchedule.js" />
+    <Content Include="Scripts\Retrieves\RetrievingSkill.js" />
+    <Content Include="Scripts\Retrieves\RetrievingStudent.js" />
+    <Content Include="Scripts\Retrieves\RetrievingStudentSkill.js" />
+    <Content Include="Scripts\Retrieves\RetrievingUniversity.js" />
+    <Content Include="Scripts\Retrieves\RetrievingVillage.js" />
+    <Content Include="Scripts\Retrieves\RetrievingWeeklyScore.js" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     <Content Include="Scripts\SweetAlert\sweetalert-dev.js" />
     <Content Include="Scripts\SweetAlert\sweetalert.css" />
     <Content Include="Scripts\SweetAlert\sweetalert.min.js" />
@@ -232,6 +274,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Provincies\Index.cshtml" />
     <Content Include="Views\Regencies\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Organizations\Index.cshtml" />
     <Content Include="Views\Placements\Index.cshtml" />
     <Content Include="Views\Accesses\Index.cshtml" />
@@ -248,6 +291,26 @@
     <Content Include="Views\Districts\Index.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Views\ErrorBanks\Index.cshtml" />
+=======
+    <Content Include="Views\Religions\Index.cshtml" />
+    <Content Include="Views\Districts\Index.cshtml" />
+    <Content Include="Views\Villages\Index.cshtml" />
+    <Content Include="Views\Universities\Index.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\WeeklyScores\Index.cshtml" />
+    <Content Include="Views\DailyScores\Index.cshtml" />
+    <Content Include="Views\HistoryEducations\Index.cshtml" />
+    <Content Include="Views\Batches\Index.cshtml" />
+    <Content Include="Views\Classes\Index.cshtml" />
+    <Content Include="Views\Departments\Index.cshtml" />
+    <Content Include="Views\ErrorBanks\Index.cshtml" />
+    <Content Include="Views\Lessons\Index.cshtml" />
+    <Content Include="Views\Rooms\Index.cshtml" />
+    <Content Include="Views\Schedules\Index.cshtml" />
+    <Content Include="Views\SkillStudents\Index.cshtml" />
+    <Content Include="Views\Skills\Index.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

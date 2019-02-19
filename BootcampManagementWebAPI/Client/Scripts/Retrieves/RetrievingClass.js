@@ -1,5 +1,9 @@
 ﻿var Departments = []
 var Batches = []
+<<<<<<< HEAD
+=======
+var Employees = []
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
 $(document).ready(function () {
     hideAlert();
     LoadIndexClass();
@@ -8,6 +12,34 @@ $(document).ready(function () {
     })
 })
 
+<<<<<<< HEAD
+=======
+function LoadEmployee(element) {
+    if (Employees.length == 0) {
+        $.ajax({
+            type: "GET", // get
+            url: 'http://localhost:53126/api/Employees',
+            success: function (data) {
+                Employees = data; //Class
+                //and render Class to element
+                renderEmployee(element); 
+            }
+        })
+    } else {
+        //render Class to element if var Classes above not empty
+        renderEmployee(element);
+    }
+}
+function renderEmployee(element) {
+    var $ele = $(element);
+    $ele.empty(); //kosongkan element
+    $ele.append($('<option/>').val('0').text('Select')); //tambahkan item kedalam dropdown
+    $.each(Employees, function (i, val) { // tambahkan item baru kedalam dropdown untuk setiap nilai yang ada didalam Classs []
+        $ele.append($('<option/>').val(val.Id).text(val.First_Name)); //id sama namanyanya Provincies
+    })
+}
+
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
 function LoadDepartment(element) {
     if (Departments.length == 0) {
         $.ajax({
@@ -16,7 +48,11 @@ function LoadDepartment(element) {
             success: function (data) {
                 Departments = data; //Class
                 //and render Class to element
+<<<<<<< HEAD
                 renderDepartment(element); 
+=======
+                renderDepartment(element);
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             }
         })
     } else {
@@ -72,6 +108,10 @@ function LoadIndexClass() {
                 html += '<td>' + val.Name + '</td>';
                 html += '<td>' + val.Departments.Name + '</td>';
                 html += '<td>' + val.Batches.Name + '</td>';//ini untuk tampilkan foreign key
+<<<<<<< HEAD
+=======
+                html += '<td>' + val.Employees.First_Name + '</td>'
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
                 html += '<td> <a href="#" onclick="return GetById('+val.Id+')"> Edit </a>';
                 html += '| <a href="#" onclick="return Delete('+val.Id+')"> Delete </a>  </td>';
                 html += '</tr>';
@@ -88,6 +128,10 @@ function Save() {
     item.Name = $('#Name').val(); // simpan nilai yang ada di #Name di view kedalam object 
     item.Department_Id = $('#Department').val();// masih ragu disini
     item.Batch_Id = $('#Batch').val();
+<<<<<<< HEAD
+=======
+    item.Employee_Id = $('#Employee').val();
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     $.ajax({
         type: "POST", //insert
         url: "http://localhost:53126/api/Classes",
@@ -99,6 +143,10 @@ function Save() {
             $('#Name').val('');
             $('#Department').val(0);
             $('#Batch').val(0);
+<<<<<<< HEAD
+=======
+            $('#Employee').val(0);
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
         }
     });
 }
@@ -110,6 +158,10 @@ function Edit() {
     item.Name = $('#Name').val();// data yang akan diedit
     item.Department_id = $('#Department').val();// masih ragu disini
     item.Batch_Id = $('#Batch').val();
+<<<<<<< HEAD
+=======
+    item.Employee_Id = $('#Employee').val();
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     $.ajax({
         type: "PUT", //put untuk update
         url: "http://localhost:53126/api/Classes/" + $('#Id').val(),
@@ -121,6 +173,11 @@ function Edit() {
             $('#Name').val('');
             $('#Department').val(0);
             $('#Batch').val(0);
+<<<<<<< HEAD
+=======
+            $('#Employee').val(0);
+
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
         }
     });
 };
@@ -135,6 +192,10 @@ function GetById(Id) {
             $('#Name').val(item.Name);
             $('#Department').val(item.Departments.Id);//udah benar
             $('#Batch').val(item.Batches.Id);
+<<<<<<< HEAD
+=======
+            $('#Employee').val(item.Employees.Id);
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
             $('#myModal').modal('show');
             $('#Update').show();
             $('#Save').hide();
@@ -185,7 +246,20 @@ function validationInsert() {
         $('#Department').siblings('span.error').css('visibility', 'visible');
     }
     // kalau semua field sudah terisi
+<<<<<<< HEAD
     if (isAllValid) { 
+=======
+    if ($('#Batch').val() == "0" || $('#Batch').val() == 0) {
+        isAllValid = false;
+        $('#Batch').siblings('span.error').css('visibility', 'visible');
+    }
+    if ($('#Employee').val() == "0" || $('#Employee').val() == 0) {
+        isAllValid = false;
+        $('#Employee').siblings('span.error').css('visibility', 'visible');
+    }
+    // kalau semua field sudah terisi
+    if (isAllValid) {
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
         Save();
     }
 }
@@ -205,6 +279,18 @@ function validationUpdate() {
         $('#Department').siblings('span.error').css('visibility', 'visible');
     }
     // kalau semua field sudah terisi
+<<<<<<< HEAD
+=======
+    if ($('#Batch').val() == "0" || $('#Batch').val() == 0) {
+        isAllValid = false;
+        $('#Batch').siblings('span.error').css('visibility', 'visible');
+    }
+    if ($('#Employee').val() == "0" || $('#Employee').val() == 0) {
+        isAllValid = false;
+        $('#Employee').siblings('span.error').css('visibility', 'visible');
+    }
+    // kalau semua field sudah terisi
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     if (isAllValid) {
         Edit();
     }
@@ -214,13 +300,27 @@ function hideAlert() {
     $('#Name').siblings('span.error').css('visibility', 'hidden');
     $('#Department').siblings('span.error').css('visibility', 'hidden');
     $('#Batch').siblings('span.error').css('visibility', 'hidden');
+<<<<<<< HEAD
+=======
+    $('#Employee').siblings('span.error').css('visibility', 'hidden');
+
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
 }
 
 function nuke() {
     $('#Name').val('');
     $('#Department').val(0);
     $('#Batch').val(0);
+<<<<<<< HEAD
     hideAlert();
 }
 LoadDepartment($('#Department'));
 LoadBatch($('#Batch'));
+=======
+    $('#Employee').val(0);
+    hideAlert();
+}
+LoadDepartment($('#Department'));
+LoadBatch($('#Batch'));
+LoadEmployee($('#Employee'));
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43

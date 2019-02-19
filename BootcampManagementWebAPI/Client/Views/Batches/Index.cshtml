@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 ﻿
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
+=======
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Batch</h2>
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
 
 <div class="container">
     <hr />
@@ -51,12 +59,20 @@
                     </div>
                     <div class="form-group">
                         <label for="DateStart">Date Start</label>
+<<<<<<< HEAD
                         <input type="date" class="form-control" id="DateStart" placeholder="Date Start" />
+=======
+                        <input type="text" class="form-control" id="DateStart" placeholder="Date Start" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
                         <span style="color:red" class="error">Date must not be null or whitespace</span>
                     </div>
                     <div class="form-group">
                         <label for="DateEnd">Date End</label>
+<<<<<<< HEAD
                         <input type="date" class="form-control" id="DateEnd" placeholder="Date End" />
+=======
+                        <input type="text" class="form-control" id="DateEnd" placeholder="Date End" />
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
                         <span style="color:red" class="error">Date must not be null or whitespace</span>
                     </div>
                 </form>
@@ -70,11 +86,37 @@
     </div>
 </div>
 
+<<<<<<< HEAD
 @section Scripts {
     <script src="~/Scripts/SweetAlert/sweetalert.min.js"></script>
     <link href="~/Scripts/SweetAlert/sweetalert.css" rel="stylesheet" />
     <script src="~/Scripts/DataTable/jquery.dataTables.min.js"></script>
     <link href="~/Scripts/DataTable/jquery.dataTables.min.css" rel="stylesheet" />
     <script src="~/Scripts/Retrieves/RetrievingBatch.js"></script>
+=======
+
+@section Scripts {
+<script src="~/Scripts/SweetAlert/sweetalert.min.js"></script>
+<link href="~/Scripts/SweetAlert/sweetalert.css" rel="stylesheet" />
+<script src="~/Scripts/DataTable/jquery.dataTables.min.js"></script>
+<link href="~/Scripts/DataTable/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="~/Scripts/Retrieves/RetrievingBatch.js"></script>
+<link href="~/Scripts/DatePicker/bootstrap-datepicker.min.css" rel="stylesheet" />
+<script src="~/Scripts/DatePicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+        $(function () {
+            $('#DateStart').datepicker({
+                format: "mm/dd/yyyy"
+            })
+        })
+</script>
+<script type="text/javascript">
+        $(function () {
+            $('#DateEnd').datepicker({
+                format: "mm/dd/yyyy"
+            })
+        })
+</script>
+>>>>>>> d2905a1880af22bd91c3b074297a75b37bab3a43
     @Scripts.Render("~/bundles/jqueryval")
 }
